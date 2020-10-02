@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "recall",
+	"version": "${version}",
+
+	"name": "Recall",
+	"description": "Congrats, you made it work!",
+	"authors": ["LoganDark"],
+	"contact": {
+		"sources": "https://github.com/LoganDark/fabric-recall",
+		"website": "https://github.com/LoganDark/fabric-recall",
+		"issues": "https://github.com/LoganDark/fabric-recall/issues"
+	},
+
+	"custom": {},
+
+	"license": "GPLv3",
+	"icon": "assets/recall/icon.png",
+
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"adapter": "kotlin",
+				"value": "net.logandark.recall.Recall"
+			}
+		]
+	},
+
+	"mixins": ["recall.mixins.json"],
+
+	"depends": {
+		"fabricloader": ">=0.8.8",
+		"fabric-language-kotlin": ">=1.3.71+build.1",
+		"minecraft": "1.16.x"
+	},
+	"suggests": {}
+}
